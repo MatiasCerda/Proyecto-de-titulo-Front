@@ -1,0 +1,77 @@
+<form>
+    <mat-card style="max-width: 550px; margin: 0 auto;">
+        <mat-card-header>
+            <div>
+                <mat-card-title>Licencias</mat-card-title>
+                <mat-card-subtitle>Datos para el informe de Licencias</mat-card-subtitle>
+            </div>
+        </mat-card-header>
+        <mat-card-content style="display: inline-block; width: 100%;">
+            <div style="float: left; width: 100%;">
+                <br>
+                <h3 style="font-weight: bold; color:#0077c8;">Delimitaciones generales</h3>
+                
+                    
+                    <!--Form Clase de documento-->
+                    <mat-form-field color="primary" appearance="outline">
+                        <mat-label>Clase de Documento</mat-label>
+                        <select matNativeControl required>
+                        <option value="AC">AC</option>
+                        <option value="SB">SB</option>
+                        <option value="AF1">AF1</option>
+                        
+                        </select>
+                    </mat-form-field>
+                    <!-- Fin form Clase de documento   -->
+                    <br>
+                    <!--  -->
+                    <mat-form-field color="primary" appearance="outline">
+                        <mat-label>Periodo Contable</mat-label>
+                        <select matNativeControl required>
+                        <option value="20201">20201</option>
+                        <option value="20202">20202</option>
+                        <option value="20204">20204</option>
+                        
+                        </select>
+                    </mat-form-field>
+                    <!-- Fin form Periodo Contable   -->
+                    
+                    <!-- Acá va el error en caso de no completar los campos
+                    <mat-error *ngIf="form.controls.fechaDesde.hasError('required')">
+                        Fecha desde es requerida
+                    </mat-error>
+                    -->
+                
+            </div>
+            <p style="font-weight: bold; color:#e10a0a;"></p>
+        </mat-card-content>
+        <mat-card-actions style="text-align: center;">
+            <br>
+            <button mat-raised-button color="primary" style="width: 230px;"> 
+            <!-- (click)="obtenerDetalleExcedentes()" -->
+                Detalle &nbsp;
+                
+            </button>
+            <button mat-raised-button color="primary" style="width: 230px;">
+                <!-- Boton (click)="obtenerResumenExcedentes()"-->
+                Resumen &nbsp;
+                
+            </button>
+            <br>
+            <br>
+            <button mat-raised-button color="primary" style="width: 230px;">
+                <!-- Boton (click)="descargarDetalleExcedentes()"-->
+                Descargar Detalle en Excel &nbsp;
+                <mat-icon>download</mat-icon>
+            </button>
+            <button mat-raised-button color="primary" style="width: 230px;">
+                <!-- Boton (click)="descargarResumenExcedentes()"-->
+                Descargar Resumen en Excel &nbsp;
+                <mat-icon>download</mat-icon>
+            </button>
+
+        </mat-card-actions>
+        <br>
+    </mat-card>
+   
+</form>

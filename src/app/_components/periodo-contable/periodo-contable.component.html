@@ -1,0 +1,8 @@
+<mat-form-field color="primary" appearance="outline">
+  <mat-label>Periodo Contable</mat-label>
+  <mat-select [formControl]="periodoContableControl" required>
+      <mat-option *ngFor="let periodoContable of listaPeriodoContable" [value]="periodoContable.periodo">
+          {{periodoContable.periodo}}
+      </mat-option> 
+  </mat-select>
+</mat-form-field>

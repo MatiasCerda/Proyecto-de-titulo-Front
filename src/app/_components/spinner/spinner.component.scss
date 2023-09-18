@@ -1,0 +1,39 @@
+.spinner {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  
+  /* Pulse spinner */
+  .pulse-spinner {
+      -webkit-animation: scaleout 3.0s infinite ease-in-out;
+    animation: scaleout 3.0s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes scaleout {
+      0%		{	-webkit-transform: scale(0.7); opacity:0.7; }
+      50%		{	-webkit-transform: scale(1.0); opacity:1.0; }
+      100%	{	-webkit-transform: scale(0.7); opacity:0.7; }
+  }
+  
+  @keyframes scaleout {
+      0%		{	transform: scale(0.7);
+                  -webkit-transform: scale(0.7);
+                  opacity:0.7;
+              } 
+      50%		{	transform: scale(1.0);
+                  -webkit-transform: scale(1.0);
+                  opacity:1.0;
+              }
+      100%	{	transform: scale(0.7);
+                  -webkit-transform: scale(0.7);
+                  opacity:0.7;
+              } 
+            }
+

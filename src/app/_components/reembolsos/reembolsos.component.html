@@ -1,0 +1,61 @@
+<form>
+    <mat-card style="max-width: 550px; margin: 0 auto;">
+        <mat-card-header>
+            <div>
+                <mat-card-title>Reembolsos</mat-card-title>
+                <mat-card-subtitle>Datos para el informe de Reembolsos</mat-card-subtitle>
+            </div>
+        </mat-card-header>
+        <mat-card-content style="display: inline-block; width: 100%;">
+            <div style="float: left; width: 100%;">
+                <br>
+                <h3 style="font-weight: bold; color:#0077c8;">Delimitaciones generales</h3>
+                
+                    
+                    <!--Form Clase de documento-->
+                    <app-clase-documento (claseDocumentoChange)="recibeClaseDocumento($event); limpiar()" [concepto]="this.TIPO_DOCUMENTO"  ></app-clase-documento>
+                    <!-- Fin form Clase de documento -->
+                    <br>
+                    <!--Form Periodo Contable-->
+                    <app-periodo-contable (periodoContableChange)="recibePeriodoContable($event); limpiar()" [valor]="this.periodoContable"  ></app-periodo-contable>
+                    <!-- Fin form Periodo Contable -->
+                
+            </div>
+            <p style="font-weight: bold; color:#e10a0a;"></p>
+        </mat-card-content>
+        <mat-card-actions style="text-align: center;">
+            <br>
+            <!-- Se comentó debido a que el Detalle no se debe mostrar en pantalla
+            <button mat-raised-button (click)="obtenerDetalle(claseDocumento, periodoContable)" color="primary" color="primary" style="width: 230px;"> 
+                Detalle &nbsp;
+            </button>
+            -->
+            <button mat-raised-button (click)="obtenerResumen(claseDocumento, periodoContable)" color="primary" style="width: 230px;">
+                <!-- Boton (click)="obtenerResumenBonos(concepto, periodo)"-->
+                Resumen &nbsp;
+                
+            </button>
+            <br>
+            <br>
+            <!--    Obtener excel del Detalle-->
+            <button mat-raised-button (click)="getReporte('Detalle')" color="primary" style="width: 230px;" [disabled]="">
+                Descargar Detalle en Excel &nbsp;
+                <mat-icon>download</mat-icon>
+            </button>
+            <!--    Obtener excel del Resumen-->
+            <button mat-raised-button (click)="getReporte('Resumen')" color="primary" style="width: 230px;" [disabled]="">
+                <!-- Boton (click)="descargarResumenExcedentes()"-->
+                Descargar Resumen en Excel &nbsp;
+                <mat-icon>download</mat-icon>
+            </button>
+
+        </mat-card-actions>
+        <br>
+    </mat-card>
+   
+</form>
+
+<div>
+    <app-muestra-resumen [clase]="this.claseDocumento" [periodo]="this.periodoContable" [tipo]="this.TIPO_DOCUMENTO" ></app-muestra-resumen>
+</div>
+<br>

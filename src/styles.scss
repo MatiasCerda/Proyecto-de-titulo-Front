@@ -1,0 +1,177 @@
+// // Custom Theming for Angular Material
+// // For more information: https://material.angular.io/guide/theming
+// @import '~@angular/material/theming';
+// // Plus imports for other components in your app.
+
+// // Include the common styles for Angular Material. We include this here so that you only
+// // have to load a single css file for Angular Material in your app.
+// // Be sure that you only ever include this mixin once!
+// @include mat-core();
+
+// // Define the palettes for your theme using the Material Design palettes available in palette.scss
+// // (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// // hue. Available color palettes: https://material.io/design/color/
+// $monitorContabilizacion-front-primary: mat-palette($mat-indigo);
+// $monitorContabilizacion-front-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// // The warn palette is optional (defaults to red).
+// $monitorContabilizacion-front-warn: mat-palette($mat-red);
+
+// // Create the theme object (a Sass map containing all of the palettes).
+// $monitorContabilizacion-front-theme: mat-light-theme($monitorContabilizacion-front-primary, $monitorContabilizacion-front-accent, $monitorContabilizacion-front-warn);
+
+// // Include theme styles for core and each component used in your app.
+// // Alternatively, you can import and @include the theme mixins for each component
+// // that you are using.
+// @include angular-material-theme($monitorContabilizacion-front-theme);
+
+// /* You can add global styles to this file, and also import other style files */
+
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// .container-colmena {
+//   position: absolute;
+//   top: 64px;
+//   width: 100%;
+// }
+
+// .container-colmena h1 {
+//   font-weight: 300;
+// }
+
+// .tile-grid-colmena {
+//   height: 100% ;
+// }
+
+.full-width-field {
+  width: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body, 
+input,
+h1,
+h2,
+h3,
+.mat-form-field,
+p {
+  font-family: 'BlissPro', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.mat-simple-snackbar {
+  font-size: 15px;
+}
+
+.mat-form-field {
+  letter-spacing: normal !important;
+}
+
+/*----------------------------------------*/
+/*----- Estilo del mat-form-field --------*/
+/*----------------------------------------*/
+.mat-form-field{
+  line-height: 16px !important;
+  font-size: 15px !important;
+}
+.mat-form-field-outline{
+  background-color: #eff9ff;
+}
+.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label{
+  font-size: 16px !important;
+  color:#0077c8;
+}
+.mat-form-field-disabled>.mat-form-field-wrapper>.mat-form-field-flex>.mat-form-field-outline{
+  background-color: #f8f9fa;
+}
+.mat-form-field-flex > .mat-form-field-infix {
+  padding: 0.5em 0px !important;
+}
+.mat-form-field-label-wrapper {
+  top: -1.2em !important;
+}
+.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+  transform: translateY(-1.3em) scale(.75) !important;
+  width: 133.33333%;
+}
+.mat-form-field-subscript-wrapper{
+  margin: 0px !important;
+}
+
+/*----------------------------------------*/
+/*--------- Estilo del mat-card ----------*/
+/*----------------------------------------*/
+.mat-card{
+  min-width: 250px;
+}
+.mat-card-header-text{
+  display: block;
+  width: 100%;
+}
+.mat-card-header {
+  display: block !important;
+}
+.mat-card-title{
+  color:#0077c8;
+  border-bottom: 1px solid #0077c8;
+}
+// .table-container {
+//   overflow: auto;
+//   border: 1px solid #0077c8;
+// }
+
+/*----------------------------------------*/
+/*---------- Estilo del table ------------*/
+/*----------------------------------------*/
+table {
+  width: 100%;
+  margin-top: 1px;
+}
+table tr:nth-child(2n-1){
+  background-color: #f2faff;
+}
+tr.mat-header-row {
+  height: 28px !important;
+}
+th.mat-header-cell{
+  text-align: center !important;
+  background-color: #0077c8;
+  color: white;
+  border: 1px solid #8ac6ea;
+  font-weight: bold;
+  font-size: 12px;
+  padding-right:0px !important;
+  padding-left:0px !important;
+}
+td.mat-table-sticky {
+  text-align: center;
+  padding-left: 0px !important;
+}
+td.mat-cell{
+  border-left: 1px solid #8ac6ea;
+  color: #0077c8;
+  padding-left:5px !important;
+  padding-right: 5px !important;
+  font-size: 12px;
+  line-height: 12px;
+}
+.mat-paginator-container {
+  justify-content: center !important;
+}
+
+.mat-sort-header-arrow {
+  opacity: 2;
+  color: white;
+}
+
+.mat-sort-header-container {
+  display: inline-flex !important;
+}

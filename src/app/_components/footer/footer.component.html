@@ -1,0 +1,50 @@
+<div *ngIf="hasToken$ | async as hasToken; then footerLogged else footerLogout">
+
+</div>
+
+<ng-template #footerLogged>
+  <footer>
+    <div class="debug">
+
+    </div>
+  </footer>
+</ng-template>
+
+<ng-template #footerLogout>
+  <!-- <div class="debug">
+		<footer class="docs-footer">
+			<div class="docs-footer-list">
+				<div class="docs-footer-logo">
+					<div class="footer-logo">
+						<img src="./assets/img/logoColmenaAzul.PNG" class="logo"
+							style="float: left;width: 150px;height: 26px;">
+					</div>
+				</div>
+
+				<div class="docs-footer-version">
+					<span class="version">Colmena S.A.</span>
+				</div>
+
+				<div class="docs-footer-copyright">
+					<span>Los Militares 4777, oficina 501</span>
+					<span>Las Condes, Santiago</span>
+				</div>
+			</div>
+		</footer>
+  </div> -->
+  <mat-toolbar color="primary" style="font-size: 12px; height: 100px; position: fixed; bottom: 0;">
+
+    <div id="footer">
+      <img src="./assets/img/texto-colmena-blanco.png" style="height: 22px;">
+
+    <p class="right">
+      <span>Los Militares 4777, oficina 501, </span>
+			<span>Las Condes, Santiago</span>
+    </p>
+    <p class="centered">&nbsp;</p>
+  </div>
+
+</mat-toolbar>
+
+
+</ng-template>

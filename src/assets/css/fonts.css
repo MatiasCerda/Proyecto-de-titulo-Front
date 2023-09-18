@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'BlissPro';
+    src: url('../fonts/BlissPro-Medium.eot');
+    src: url('../fonts/BlissPro-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-Medium.woff') format('woff'), url('../fonts/BlissPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BlissPro';
+    src: url('../fonts/BlissPro-Italic.eot');
+    src: url('../fonts/BlissPro-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-Italic.woff') format('woff'), url('../fonts/BlissPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BlissPro';
+    src: url('../fonts/BlissPro-HeavyItalic.eot');
+    src: url('../fonts/BlissPro-HeavyItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-HeavyItalic.woff') format('woff'), url('../fonts/BlissPro-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BlissPro';
+    src: url('../fonts/BlissPro-Bold_1.eot');
+    src: url('../fonts/BlissPro-Bold_1.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-Bold_1.woff') format('woff'), url('../fonts/BlissPro-Bold_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BlissPro';
+    src: url('../fonts/BlissPro-Light.eot');
+    src: url('../fonts/BlissPro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-Light.woff') format('woff'), url('../fonts/BlissPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BlissPro';
+    src: url('../fonts/BlissPro-ExtraBold.eot');
+    src: url('../fonts/BlissPro-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-ExtraBold.woff') format('woff'), url('../fonts/BlissPro-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BlissPro';
+    src: url('../fonts/BlissPro-ExtraBoldItalic.eot');
+    src: url('../fonts/BlissPro-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-ExtraBoldItalic.woff') format('woff'), url('../fonts/BlissPro-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BlissPro';
+    src: url('../fonts/BlissPro-Heavy.eot');
+    src: url('../fonts/BlissPro-Heavy.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-Heavy.woff') format('woff'), url('../fonts/BlissPro-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BlissPro';
+    src: url('../fonts/BlissPro-BoldItalic_1.eot');
+    src: url('../fonts/BlissPro-BoldItalic_1.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-BoldItalic_1.woff') format('woff'), url('../fonts/BlissPro-BoldItalic_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BlissPro';
+    src: url('../fonts/BlissPro-MediumItalic.eot');
+    src: url('../fonts/BlissPro-MediumItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-MediumItalic.woff') format('woff'), url('../fonts/BlissPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BlissPro';
+    src: url('../fonts/BlissPro-ExtraLightItalic_1.eot');
+    src: url('../fonts/BlissPro-ExtraLightItalic_1.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-ExtraLightItalic_1.woff') format('woff'), url('../fonts/BlissPro-ExtraLightItalic_1.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'BlissPro';
+    src: url('../fonts/BlissPro-ExtraLight_1.eot');
+    src: url('../fonts/BlissPro-ExtraLight_1.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-ExtraLight_1.woff') format('woff'), url('../fonts/BlissPro-ExtraLight_1.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BlissPro';
+    src: url('../fonts/BlissPro-Regular.eot');
+    src: url('../fonts/BlissPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-Regular.woff') format('woff'), url('../fonts/BlissPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('../fonts/BlissPro-Bold.eot');
+    src: url('../fonts/BlissPro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-Bold.woff') format('woff'), url('../fonts/BlissPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('../fonts/BlissPro-BoldItalic.eot');
+    src: url('../fonts/BlissPro-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-BoldItalic.woff') format('woff'), url('../fonts/BlissPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('../fonts/BlissPro-ExtraLight.eot');
+    src: url('../fonts/BlissPro-ExtraLight.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-ExtraLight.woff') format('woff'), url('../fonts/BlissPro-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('../fonts/BlissPro.eot');
+    src: url('../fonts/BlissPro.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro.woff') format('woff'), url('../fonts/BlissPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('../fonts/BlissPro-ExtraLightItalic.eot');
+    src: url('../fonts/BlissPro-ExtraLightItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-ExtraLightItalic.woff') format('woff'), url('../fonts/BlissPro-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('../fonts/BlissPro-ExtraBold_1.eot');
+    src: url('../fonts/BlissPro-ExtraBold_1.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-ExtraBold_1.woff') format('woff'), url('../fonts/BlissPro-ExtraBold_1.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('../fonts/BlissPro-ExtraBoldItalic_1.eot');
+    src: url('../fonts/BlissPro-ExtraBoldItalic_1.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-ExtraBoldItalic_1.woff') format('woff'), url('../fonts/BlissPro-ExtraBoldItalic_1.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('../fonts/BlissPro-Italic_1.eot');
+    src: url('../fonts/BlissPro-Italic_1.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-Italic_1.woff') format('woff'), url('../fonts/BlissPro-Italic_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('../fonts/BlissPro-Heavy_1.eot');
+    src: url('../fonts/BlissPro-Heavy_1.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-Heavy_1.woff') format('woff'), url('../fonts/BlissPro-Heavy_1.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('../fonts/BlissPro-HeavyItalic_1.eot');
+    src: url('../fonts/BlissPro-HeavyItalic_1.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-HeavyItalic_1.woff') format('woff'), url('../fonts/BlissPro-HeavyItalic_1.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('../fonts/BlissPro-Medium_1.eot');
+    src: url('../fonts/BlissPro-Medium_1.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-Medium_1.woff') format('woff'), url('../fonts/BlissPro-Medium_1.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('../fonts/BlissPro-LightItalic.eot');
+    src: url('../fonts/BlissPro-LightItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-LightItalic.woff') format('woff'), url('../fonts/BlissPro-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bliss Pro';
+    src: url('../fonts/BlissPro-MediumItalic_1.eot');
+    src: url('../fonts/BlissPro-MediumItalic_1.eot?#iefix') format('embedded-opentype'), url('../fonts/BlissPro-MediumItalic_1.woff') format('woff'), url('../fonts/BlissPro-MediumItalic_1.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}

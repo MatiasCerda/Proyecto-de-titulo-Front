@@ -1,0 +1,81 @@
+<!-- <h2>Hola LOGIN</h2>
+<form role="form" (ngSubmit)="login()" [formGroup]="formLogin" method="post">
+  <mat-form-field>
+    <input autocomplete="off" matInput type="text" id="username" name="username" placeholder="12.345.678-9"
+      formControlName="username" maxlength="12" formatRut required>
+    <mat-label>
+      <mat-icon>face</mat-icon>Username
+    </mat-label>
+    <mat-error *ngIf="username.hasError('required')">
+      El campo rut es
+      <strong>requerido</strong>
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <input autocomplete="off" matInput type="password" formControlName="password" required id="password"
+      name="password">
+    <mat-label>
+      <mat-icon>lock_open</mat-icon>Password
+    </mat-label>
+    <mat-error *ngIf="password.hasError('required')">
+      El campo contraseña es
+      <strong>requerido</strong>
+    </mat-error>
+  </mat-form-field>
+  <button class="btn submit center" mat-raised-button color="primary" [disabled]="!formLogin.valid">
+    LOGIN
+  </button>
+</form> -->
+
+<mat-card class="login-colmena-card">
+  <form role="form"style="margin: 0 auto; text-align: center;" role="form" (ngSubmit)="login()" [formGroup]="formLogin" method="post">
+  <mat-card-header color="primary">
+    <mat-card-title style="text-align: left;">Bienvenido</mat-card-title>
+    <mat-card-subtitle>Digita tu Rut y clave para ingresar</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+
+      <!-- <mat-form-field>
+        <mat-icon>face</mat-icon>
+      <input autocomplete="off" matInput type="text" id="username" name="username" placeholder="12.345.678-9"
+          formControlName="username" maxlength="12" formatRut required>
+        <mat-label>
+          Rut
+        </mat-label>
+        <mat-error *ngIf="username.hasError('required')">
+          El campo Rut es <strong>requerido</strong>
+        </mat-error>
+      </mat-form-field> -->
+      <mat-form-field appearance="standard">
+        <mat-label>Rut</mat-label>
+        <input autocomplete="off" matInput type="text" id="username" name="username" placeholder="12345678-9"
+          formControlName="username" maxlength="12" formatRut required>
+        <mat-icon matSuffix>person</mat-icon>
+        <mat-error *ngIf="username.hasError('required')">
+          El campo Rut es <strong>requerido</strong>
+        </mat-error>
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="standard">
+        <mat-label>Clave</mat-label>
+        <input autocomplete="off" matInput type="password" formControlName="password" required id="password"
+          name="password">
+        <mat-icon matSuffix>lock</mat-icon>
+        <mat-error *ngIf="password.hasError('required')">
+          El campo contraseña es <strong>requerido</strong>
+        </mat-error>
+      </mat-form-field>
+      <br>
+      <br>
+
+
+  </mat-card-content>
+  <mat-card-actions style="text-align: center;">
+    <button style="width: 100%;
+    height: 60px;" class="btn submit center" mat-raised-button color="primary" [disabled]="!formLogin.valid">
+      <mat-icon>input</mat-icon>
+      LOGIN
+    </button>
+  </mat-card-actions>
+</form>
+</mat-card>

@@ -1,0 +1,8 @@
+<mat-form-field color="primary" appearance="outline">
+    <mat-label>Clase Documento</mat-label>
+    <mat-select [formControl]="claseDocumentoControl" required>
+        <mat-option *ngFor="let claseDocumento of listaClaseDocumento" [value]="claseDocumento.clase">
+            {{claseDocumento.clase}}
+        </mat-option> 
+    </mat-select>
+</mat-form-field>

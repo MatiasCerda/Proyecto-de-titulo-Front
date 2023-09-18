@@ -1,0 +1,125 @@
+<mat-card style="max-width: 550px; margin: 0 auto;">
+
+    <!--Cabecera-->
+    <table>
+      <tr>
+        <td>
+          Xsap Periodo
+        </td>
+        <td>
+          {{this.periodo}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Sap Prmtabla
+        </td>
+        <td>
+          {{this.tipo}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Sap Prmclase
+        </td>
+        <td>
+          {{this.clase}}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Sap PrmInter
+        </td>
+        <td>
+          {{this.sapPrmInter}}
+        </td>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <div class="mat-elevation-z8">
+    <!--Fin Cabecera Componente-->
+    <table mat-table [dataSource]="dataSource" matSort matSortActive="xsapEiEstado" >
+    
+        <!-- Columna Ei Estado -->
+      <ng-container matColumnDef="xsapEiEstado">
+        <th mat-header-cell *matHeaderCellDef> Xsap Ei Estado </th>
+        <td mat-cell *matCellDef="let registro"> {{registro.xsapEiEstado}} </td>
+      </ng-container>
+    
+          <!-- Columna Fecha -->
+          <ng-container  matColumnDef="xsapFecha">
+            <th mat-header-cell *matHeaderCellDef> Xsap Fecha </th>
+            <td mat-cell *matCellDef="let registro"> {{registro.xsapFecha}} </td>
+          </ng-container>
+    
+              <!-- Columna Origen -->
+      <ng-container matColumnDef="origen">
+        <th mat-header-cell *matHeaderCellDef> Origen </th>
+        <td mat-cell *matCellDef="let registro"> {{registro.montoOrigen | number}} </td>
+      </ng-container>
+    
+          <!-- Columna Intermedia -->
+          <ng-container matColumnDef="intermedia">
+            <th mat-header-cell *matHeaderCellDef> Intermedia </th>
+            <td mat-cell *matCellDef="let registro"> {{registro.montoIntermedia | number}} </td>
+          </ng-container>
+    
+              <!-- Columna Sap -->
+      <ng-container matColumnDef="sap">
+        <th mat-header-cell *matHeaderCellDef> Sap </th>
+        <td mat-cell *matCellDef="let registro"> {{registro.montoSap | number}} </td>
+      </ng-container>
+    
+          <!-- Columna Tuplas -->
+          <ng-container matColumnDef="tuplas">
+            <th mat-header-cell *matHeaderCellDef> Tuplas </th>
+            <td mat-cell *matCellDef="let registro"> {{registro.montoTuplas | number}} </td>
+          </ng-container>
+    
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      
+    </table>
+    <mat-paginator #paginator itemsPerPageLabel="asdas" [pageIndex]="0" [pageSize]="15" [pageSizeOptions]="[15, 35]" showFirstLastButtons>
+    </mat-paginator>
+<!--
+    <table mat-table [dataSource]="dataSourceSubTotal" >
+      Comentario : Columna Estados 
+      <ng-container matColumnDef="estado">
+        <th mat-header-cell *matHeaderCellDef > Estado </th>
+        <td mat-cell *matCellDef="let regsubtotal"> {{regsubtotal.estado}} </td>
+      </ng-container>
+       Comentario : Columna SubTotal Origen
+      <ng-container matColumnDef="subTotalOrigen">
+        <th mat-header-cell *matHeaderCellDef> SubTotal Origen </th>
+        <td mat-cell *matCellDef="let regsubtotal"> {{regsubtotal.subTotalOrigen | number}} </td>
+      </ng-container>
+      Comentario : Columna SubTotal Intermedia
+      <ng-container matColumnDef="subTotalIntermedia">
+        <th mat-header-cell *matHeaderCellDef> SubTotal Intermedia </th>
+        <td mat-cell *matCellDef="let regsubtotal"> {{regsubtotal.subTotalIntermedia | number}} </td>
+      </ng-container>
+      Comentario : Columna SubTotal Sap
+      <ng-container matColumnDef="subTotalSap">
+        <th mat-header-cell *matHeaderCellDef> SubTotal Sap </th>
+        <td mat-cell *matCellDef="let regsubtotal"> {{regsubtotal.subTotalSap | number}} </td>
+      </ng-container>
+      Comentario :  Columna SubTotal Tuplas
+      <ng-container matColumnDef="subTotalTuplas">
+        <th mat-header-cell *matHeaderCellDef> SubTotal Tuplas </th>
+        <td mat-cell *matCellDef="let regsubtotal"> {{regsubtotal.subTotalTuplas | number}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="subtotalesColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: subtotalesColumns;"></tr>
+
+    </table>
+    -->
+    <br>
+    <br>
+    <br>
+    </div>
+
+    </mat-card>

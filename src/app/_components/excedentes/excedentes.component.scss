@@ -1,0 +1,125 @@
+.example-card {
+    max-width: 400px;
+    margin-bottom: 8px;
+  }
+  
+.container {
+  height:100%;
+}
+ul {
+  list-style: none;
+}
+a {
+  color:#fff;
+  text-decoration:none;
+  // border-bottom:1px solid #fff;
+  padding:0px 0px 20px 0px;
+  width:100%;
+  display:block;
+  height:100%;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.8em !important;
+}
+li {
+  padding:0px 20px 0 20px;
+  width:100%;
+  color:#fff;
+}
+.container ul {height:100%;}
+.container > ul {
+  width:250px;
+  background-color:#FFFFFF;
+  position:relative;
+  overflow:visible;
+}
+.container > ul > li {}
+.container > ul > li:hover {background-color:#0077c8;}
+.container > ul > li a:hover {background: none; }
+.container > ul > li > ul {
+  display:none;
+  position:absolute;
+  right:-250px;
+  top:0;
+  width:250px;
+  background-color:#FFFFFF;
+}
+.container > ul > li:hover > ul {
+  display:block;
+}
+
+.container > ul > li > ul > li > ul > li:hover > ul {
+  display:block;
+}
+.container > ul > li > ul >li:hover {background-color:#0077c8 !important;}
+.container > ul > li > ul > li > ul > li > ul > li:hover {background-color:#0077c8 !important;}
+.container > ul > li > ul > li > ul {
+  display:none;
+  position:relative;
+  right:-250px;
+  top:0;
+  width:250px;
+  background-color:#112551;
+}
+
+.container > ul > li > ul >li > ul > li:hover {background-color:#0077c8 !important;}
+.container > ul > li > ul > li > ul > li > ul {
+  display:none;
+  position:relative;
+  right:-250px;
+  top:0;
+  width:250px;
+  background-color:#112551;
+}
+
+
+.container > ul > li > ul > li:hover ul {
+  display:block;
+}
+.container > ul > li > ul > li > ul > li:hover {background-color:#0077c8 !important;}
+.container > ul > li > ul > li ul li ul li {
+  // border-bottom:1px solid #fff;
+  padding:20px;
+}
+
+.container > ul > li:hover > a {
+  color: #FFF;
+}
+
+.container ul > li > ul > li:hover > a {
+  color: #FFF;
+}
+
+.container ul > li > ul > li > ul > li:hover > a {
+  color: #FFF;
+}
+
+.container > ul > li:hover > .colmena_icon_menu {
+  color: #FFF !important;
+}
+
+.container ul > li > ul > li:hover > a > .colmena_icon_submenu {
+  color: #FFF;
+}
+
+.colmena_menu_l2:last-of-type {
+  -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+.colmena_menu_l3:last-of-type {
+  -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+.colmena_menu_l4:last-of-type {
+  -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+.mat-list-item {
+  height: 38px !important;
+}

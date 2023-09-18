@@ -1,0 +1,25 @@
+<app-spinner></app-spinner>
+<app-header style="position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 2;" class="mat-elevation-z6" [inputSideNav]="sideNav"></app-header>
+
+<mat-sidenav-container>
+  <mat-sidenav [disableClose]="false" mode="over" #sideNav style="width: 270px;">
+    <mat-nav-list>
+
+
+      <app-menu *ngIf="hasToken$ | async as hasToken"  [inputSideNav]="sideNav"></app-menu>
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="mat-content-colmena">
+    <main>
+    <router-outlet></router-outlet>
+  </main>
+  <app-footer></app-footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+

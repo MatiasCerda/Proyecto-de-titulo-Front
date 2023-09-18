@@ -1,0 +1,27 @@
+stages:
+  - quality-check
+
+quality-check:
+  stage: quality-check
+  image: registry.gitlab.com/isapre-colmena-innovacion/devops/ci-cd-pipeline/docker-ci-cd-images/maven
+  variables:
+    SONAR_TOKEN: $SONAR_TOKEN
+    SONAR_HOST_URL: "https://sonarqube.colmena-ops.dev/"
+    GIT_DEPTH: 0
+  only:
+    refs:
+      - develop
+      - master
+    changes:
+      - .gitlab-ci.yml
+      - Dockerfile
+      - src/**/*
+      - pom.xml
+  script:
+          - mvn clean install sonar:sonar -Dsonar.projectKey=sonarqube-ejemplo -Dsonar.branch.name="$CI_COMMIT_REF_NAME" -Dsonar.login="$SONAR_TOKEN" -Dsonar.sources=./src/main -Dsonar.sourceEncoding=UTF-8 -Dsonar.host.url="$SONAR_HOST_URL"
+  artifacts:
+    paths:
+      - target/*.jar
+  tags:
+    - gcp-docker-runner
+

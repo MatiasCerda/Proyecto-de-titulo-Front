@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button aria-label="Menú" (click)="this.inputSideNav.toggle()" [disabled]="!(hasToken$ | async)">
+    <mat-icon>
+      <img src="./assets/img/panal-colmena-blanco.png" height="30px"
+        style="margin-left: -10px; margin-top: -6px;">
+    </mat-icon>
+  </button>
+  <span class="app-title menu">Monitor de Contabilizaciones</span>
+
+  <app-datos-usuario *ngIf="hasToken$ | async as hasToken"></app-datos-usuario>
+
+  <!-- <button *ngIf="hasToken$ | async as hasToken" mat-icon-button [matMenuTriggerFor]="date" aria-label="Calendario">
+    <mat-icon>today</mat-icon>
+  </button>
+  <mat-menu #date="matMenu">
+    <button mat-menu-item disabled>
+      <mat-icon>today</mat-icon>
+      {{today | date:'dd-MM-yyyy'}}
+    </button>
+  </mat-menu> -->
+  <button *ngIf="hasToken$ | async as hasToken" mat-icon-button aria-label="Cerrar sesión" (click)="logout()">
+    <mat-icon>logout</mat-icon>
+  </button>
+</mat-toolbar>

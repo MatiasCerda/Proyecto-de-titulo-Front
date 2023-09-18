@@ -1,0 +1,59 @@
+
+<span *ngIf="opciones != null && opciones.length > 0">
+  <div class="container" style="position: fixed; width: 100vw; height: 90vh; overflow-y: scroll; overflow-x: hidden;">
+  <!-- Opciones de la barra de navergacion-->
+    <a id="home" mat-list-item [routerLink]="['/home']" (click)="inputSideNav.close()" style="border-bottom: 1px solid #e0e0e0; width: 270px; height: 40px;">
+      <mat-icon matListAvatar>home</mat-icon>
+      <h5 matLine>Principal</h5>
+      <p matLine>Inicio de Monitor de Contabilizaciones</p>
+    </a>
+    <ul *ngFor="let opcion of opciones[0].subOpciones" style="margin: 0; padding-inline-start: 0; height: 40px;">
+      <li *ngIf="opcion.subOpciones != null && opcion.subOpciones.length > 0" style="padding: 0;">
+        <mat-icon class="colmena_icon_menu" style="display: block; color: black;
+        position: absolute;
+        left: 226px;
+        top: 9px;
+        font-size: 20px;">arrow_forward_ios</mat-icon>
+        <a mat-list-item tabindex="-1">{{opcion.nombre}}</a>
+        <ul style="padding: 0;">
+          <li class="colmena_menu_l2" *ngFor="let subOpcion of opcion.subOpciones" style="background-color: white; max-height: 38px; border-bottom: 1px solid #e0e0e0;">
+            <a *ngIf="subOpcion.subOpciones != null && subOpcion.subOpciones.length > 0" mat-list-item tabindex="-1">
+              {{subOpcion.nombre}}
+              <mat-icon class="colmena_icon_submenu" style="display: block;
+        position: absolute;
+        left: 240px;
+        top: 9px;
+        font-size: 20px;">arrow_forward_ios</mat-icon>
+            </a>
+            <a *ngIf="subOpcion.subOpciones == null || subOpcion.subOpciones.length == 0" (click)="inputSideNav.close()" mat-list-item tabindex="-1" [routerLink]="[subOpcion.url]">{{subOpcion.nombre}}</a>
+            <ul *ngIf="subOpcion.subOpciones != null && subOpcion.subOpciones.length > 0" style="padding: 0; top: -38px; right: -270px; background-color: white;">
+              <li class="colmena_menu_l3" *ngFor="let subOpcion2 of subOpcion.subOpciones" style="padding: 0; border-bottom: 1px solid #e0e0e0; max-height: 38px;">
+                <a (click)="inputSideNav.close()" mat-list-item tabindex="-1" [routerLink]="[subOpcion2.url]">
+                  {{subOpcion2.nombre}}
+                  <mat-icon *ngIf="subOpcion2.subOpciones != null && subOpcion2.subOpciones.length > 0" class="colmena_icon_submenu" style="display: block;
+                  position: absolute;
+                  left: 225px;
+                  top: 9px;
+                  font-size: 20px;">arrow_forward_ios</mat-icon>
+                </a>
+                <ul *ngIf="subOpcion2.subOpciones != null && subOpcion2.subOpciones.length > 0" style="padding: 0; top: -38px; right: -250px; background-color: white;">
+                  <li class="colmena_menu_l4" *ngFor="let subOpcion3 of subOpcion2.subOpciones" style="padding: 0; border-bottom: 1px solid #e0e0e0;">
+                    <a (click)="inputSideNav.close()" mat-list-item tabindex="-1" [routerLink]="[subOpcion3.url]">{{subOpcion3.nombre}}</a> </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+      </li>
+      <li *ngIf="opcion.subOpciones == null || opcion.subOpciones.length == 0" style="margin: 0; padding-inline-start: 0; height: 40px;">
+        <a (click)="inputSideNav.close()" mat-list-item [routerLink]="[opcion.url]">{{opcion.nombre}}</a>
+      </li>
+
+    </ul>
+
+<!-- Fin de opciones de la barra de navegacion-->
+  </div>
+
+</span>
+

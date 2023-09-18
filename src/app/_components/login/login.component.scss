@@ -1,0 +1,20 @@
+.login-colmena-card {
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.mat-card-subtitle{
+  width: fit-content;
+}
+.mat-card-header {
+  display: flex !important;
+}
+.mat-card-title{
+  color:#000000;
+  border: none;
+}
